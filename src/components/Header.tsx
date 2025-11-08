@@ -11,8 +11,12 @@ const Header = () => {
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
           <p>Shop Smart. Shop Fast. Shop Jiffy NG.</p>
           <div className="flex gap-4">
-            <a href="#" className="hover:underline">Help</a>
-            <a href="#" className="hover:underline">Track Order</a>
+            <a href="#" className="hover:underline">
+              Help
+            </a>
+            <a href="#" className="hover:underline">
+              Track Order
+            </a>
           </div>
         </div>
       </div>
@@ -22,9 +26,6 @@ const Header = () => {
         <div className="flex items-center gap-6">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <Button variant="ghost" size="icon" className="lg:hidden">
-              <Menu className="h-6 w-6" />
-            </Button>
             <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-amber-500 bg-clip-text text-transparent">
               Jiffy NG
             </h1>
@@ -38,7 +39,10 @@ const Header = () => {
                 placeholder="Search for products, brands and categories..."
                 className="w-full pl-4 pr-12 h-11"
               />
-              <Button size="icon" className="absolute right-0 top-0 h-11 rounded-l-none">
+              <Button
+                size="icon"
+                className="absolute right-0 top-0 h-11 rounded-l-none"
+              >
                 <Search className="h-5 w-5" />
               </Button>
             </div>
@@ -50,6 +54,11 @@ const Header = () => {
               <Button variant="ghost" className="hidden lg:flex gap-2">
                 <User className="h-5 w-5" />
                 <span>Account</span>
+              </Button>
+            </Link>
+            <Link to="/auth">
+              <Button variant="ghost" className="lg:hidden gap-2">
+                <User className="text-black h-5 w-5" />
               </Button>
             </Link>
             <Button variant="ghost" className="relative">
@@ -66,13 +75,27 @@ const Header = () => {
       <div className="border-t hidden lg:block">
         <div className="container mx-auto px-4">
           <nav className="flex gap-6 py-3 text-sm">
-            <a href="#" className="hover:text-primary transition-colors">Electronics</a>
-            <a href="#" className="hover:text-primary transition-colors">Fashion</a>
-            <a href="#" className="hover:text-primary transition-colors">Beauty</a>
-            <a href="#" className="hover:text-primary transition-colors">Groceries</a>
-            <a href="#" className="hover:text-primary transition-colors">Home & Living</a>
-            <a href="#" className="hover:text-primary transition-colors">Sports</a>
-            <a href="#" className="hover:text-primary transition-colors">Phones & Tablets</a>
+            <a href="#" className="hover:text-primary transition-colors">
+              Electronics
+            </a>
+            <a href="#" className="hover:text-primary transition-colors">
+              Fashion
+            </a>
+            <a href="#" className="hover:text-primary transition-colors">
+              Beauty
+            </a>
+            <a href="#" className="hover:text-primary transition-colors">
+              Groceries
+            </a>
+            <a href="#" className="hover:text-primary transition-colors">
+              Home & Living
+            </a>
+            <a href="#" className="hover:text-primary transition-colors">
+              Sports
+            </a>
+            <a href="#" className="hover:text-primary transition-colors">
+              Phones & Tablets
+            </a>
           </nav>
         </div>
       </div>
